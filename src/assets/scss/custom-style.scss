@@ -1,0 +1,13 @@
+.card-actions {
+    li {
+        display: inline-block;
+        border-right: 1px solid;
+        &:last-child {
+            border: none;
+        }
+        a {
+            padding: 0 8px; 
+            text-decoration: none;
+        }
+    }
+}

@@ -15,22 +15,22 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AdminLayoutComponent
-  ],
-  imports: [
-    BrowserAnimationsModule,
-    RouterModule.forRoot(AppRoutes,{
-      useHash: true
-    }),
-    SidebarModule,
-    NavbarModule,
-    ToastrModule.forRoot(),
-    FooterModule,
-    FixedPluginModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        AdminLayoutComponent
+    ],
+    imports: [
+        BrowserAnimationsModule,
+        RouterModule.forRoot(AppRoutes,{
+            useHash: true
+        }),
+        SidebarModule,
+        NavbarModule,
+        ToastrModule.forRoot(),
+        FooterModule,
+        FixedPluginModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

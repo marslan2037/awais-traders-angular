@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AdminLayoutRoutes } from './admin-layout.routing';
 
 import { DashboardComponent }       from '../../pages/dashboard/dashboard.component';
+import { CompanyComponent }       from '../../pages/company/company.component';
 import { UserComponent }            from '../../pages/user/user.component';
 import { TableComponent }           from '../../pages/table/table.component';
 import { TypographyComponent }      from '../../pages/typography/typography.component';
@@ -17,14 +18,15 @@ import { UpgradeComponent }         from '../../pages/upgrade/upgrade.component'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  imports: [
+imports: [
     CommonModule,
     RouterModule.forChild(AdminLayoutRoutes),
     FormsModule,
     NgbModule
-  ],
-  declarations: [
+],
+declarations: [
     DashboardComponent,
+    CompanyComponent,
     UserComponent,
     TableComponent,
     UpgradeComponent,
@@ -32,7 +34,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     IconsComponent,
     MapsComponent,
     NotificationsComponent,
-  ]
+]
 })
 
 export class AdminLayoutModule {}
