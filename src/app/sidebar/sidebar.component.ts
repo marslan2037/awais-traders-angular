@@ -24,9 +24,9 @@ export const ROUTES: RouteInfo[] = [
     templateUrl: 'sidebar.component.html',
 })
 
-export class SidebarComponent implements OnInit {
+export class SidebarComponent {
     public menuItems: any[];
-    ngOnInit() {
+    constructor() {
         this.menuItems = ROUTES.filter(menuItem => menuItem);
     }
 }
