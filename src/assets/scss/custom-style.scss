@@ -1,0 +1,41 @@
+.card-stats {
+    .card-body {
+        .numbers {
+            font-size: 18px;
+        }
+    }
+}
+
+.action-buttons-list {
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.card-actions {
+    padding: 0;
+    margin: 0;
+    li {
+        height: 14px;
+        display: inline-block;
+        margin-right: 8px;
+        border-right: 1px solid #9A9A9A;
+        &:last-child {
+            margin: 0;
+            border: none;
+            a {
+                padding: 0;
+            }
+        }
+        a {
+            display: block;
+            cursor: pointer;
+            color: #9A9A9A !important;
+            line-height: 14px;
+            padding-right: 8px; 
+            text-decoration: none;
+            &:hover {
+                color: #252422 !important;
+            }
+        }
+    }
+}

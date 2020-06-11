@@ -1,6 +1,7 @@
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from "ngx-toastr";
 
 import { SidebarModule } from './sidebar/sidebar.module';
@@ -20,6 +21,8 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
         AdminLayoutComponent
     ],
     imports: [
+        FormsModule, 
+        ReactiveFormsModule,
         BrowserAnimationsModule,
         RouterModule.forRoot(AppRoutes,{
             useHash: true

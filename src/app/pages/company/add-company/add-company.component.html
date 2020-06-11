@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">Add New Company</h5>
+    </div>
+
+    <div class="card-body">
+        <form [formGroup]="form" (submit)="SubmitData()">
+            <div class="row">
+                <div class="col-md-5 pr-1">
+                    <div class="form-group">
+                        <label>Company Name</label>
+                        <input type="text" name="company_name" formControlName="company_name" placeholder="Company Name" value="" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5 pr-1">
+                    <div class="form-group">
+                        <label>Total Products</label>
+                        <input type="text" name="total_products" formControlName="total_products" placeholder="total number of products" value="" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row action-buttons-list">
+                <button type="submit" class="btn btn-primary">Add</button>
+            </div> 
+        </form>
+    </div>
+</div>
